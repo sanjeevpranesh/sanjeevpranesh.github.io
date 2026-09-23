@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjeev Pranesh S | ECE Student & Software Engineer</title>
+<meta name="description" content="Portfolio of Sanjeev Pranesh S, Electronics and Communication Engineering student at Coimbatore Institute of Technology.">
+<style>
+:root{--bg:#0b1020;--card:#121a2d;--text:#eef2ff;--muted:#aab4cc;--accent:#7c9cff;--line:#25304a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{max-width:1050px;margin:auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800}.links{display:flex;gap:24px;color:var(--muted);font-size:14px}.links a:hover{color:white}
+.hero{padding:105px 0 85px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:16px 0}.hero p{max-width:700px;color:var(--muted);font-size:19px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:11px 18px;border:1px solid var(--line);border-radius:10px}.primary{background:var(--accent);color:#081022;border-color:var(--accent);font-weight:700}
+section{padding:65px 0;border-top:1px solid var(--line)}h2{font-size:30px;margin:0 0 25px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}.card h3{margin-top:0;font-size:20px}.card p{color:var(--muted)}.tag{display:inline-block;border:1px solid var(--line);padding:5px 9px;border-radius:999px;margin:4px 4px 0 0;color:#cbd5ee;font-size:13px}
+.timeline{border-left:2px solid var(--line);padding-left:22px}.item{margin-bottom:30px}.item h3{margin:0}.date{color:var(--accent);font-size:13px;font-weight:700}
+footer{padding:35px 0;color:var(--muted);font-size:14px}
+@media(max-width:700px){.links{display:none}.grid{grid-template-columns:1fr}.hero{padding-top:75px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><div class="logo">Sanjeev Pranesh S</div><div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="container">
+<div class="eyebrow">ECE Student · Software & Embedded Systems</div>
+<h1>Building at the intersection of hardware and software.</h1>
+<p>Electronics and Communication Engineering student at Coimbatore Institute of Technology, interested in Data Structures & Algorithms, Operating Systems, embedded systems, and FPGA-based computing.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View Projects</a><a class="btn" href="https://github.com/sanjeevpranesh" target="_blank">GitHub</a><a class="btn" href="https://www.linkedin.com/in/sanjeevpranesh48" target="_blank">LinkedIn</a></div>
+</div></header>
+
+<section id="about"><div class="container"><h2>About</h2><div class="card"><p>I am pursuing a B.E. in Electronics and Communication Engineering at Coimbatore Institute of Technology. I enjoy solving engineering problems and building practical systems across software, embedded systems, and FPGA hardware.</p><p>My recent work includes an FPGA-based CNN hardware accelerator and an automated smart pill dispenser.</p></div></div></section>
+
+<section id="projects"><div class="container"><h2>Projects</h2><div class="grid">
+<div class="card"><h3>FPGA-Based CNN Hardware Accelerator</h3><p>Hardware/software co-design CNN accelerator on the Xilinx PYNQ-Z2 using Verilog HDL for edge AI inference.</p><p>Implemented Convolution, ReLU and 2×2 Max Pooling modules with AXI-Lite and AXI-Stream interfaces for PS–PL communication. Performed RTL simulation, synthesis, FPGA implementation and debugging using Xilinx Vivado.</p><span class="tag">Verilog HDL</span><span class="tag">FPGA</span><span class="tag">Vivado</span><span class="tag">PYNQ-Z2</span></div>
+<div class="card"><h3>Smart Pill Dispenser</h3><p>Automated pill dispensing system with RTC-based scheduling and peripheral integration using Embedded C.</p><p>Integrated OLED display, servo motor, buzzer and push button, followed by hardware testing and debugging.</p><span class="tag">Embedded C</span><span class="tag">RTC</span><span class="tag">Arduino</span></div>
+</div></div></section>
+
+<section id="skills"><div class="container"><h2>Technical Skills</h2><div class="card">
+<span class="tag">C</span><span class="tag">C++</span><span class="tag">SQL</span><span class="tag">Data Structures</span><span class="tag">Operating Systems</span><span class="tag">Embedded C</span><span class="tag">FPGA</span><span class="tag">PYNQ-Z2</span><span class="tag">Verilog HDL</span><span class="tag">Xilinx Vivado</span>
+</div></div></section>
+
+<section id="experience"><div class="container"><h2>Experience & Achievements</h2><div class="timeline">
+<div class="item"><div class="date">2024</div><h3>Embedded Systems Intern — Robomiracle</h3><p>Completed a 14-day internship covering embedded systems fundamentals, microcontroller programming, and hardware sensor interfacing.</p></div>
+<div class="item"><div class="date">2025</div><h3>Google Cloud Study Jams — Google Developer Group</h3><p>Completed hands-on labs in Artificial Intelligence and gained practical experience with AI concepts and AI tools.</p></div>
+<div class="item"><div class="date">2026</div><h3>Hack to Impact Hackathon — 1st Place</h3><p>Developed a custom CNN hardware accelerator on an FPGA.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="container"><h2>Contact</h2><div class="card"><p>I'm open to opportunities in software, embedded systems, and related engineering roles.</p><p><strong>Email:</strong> <a href="mailto:sanjeevpranesh7@gmail.com">sanjeevpranesh7@gmail.com</a></p><div class="buttons"><a class="btn primary" href="mailto:sanjeevpranesh7@gmail.com">Email Me</a><a class="btn" href="https://www.linkedin.com/in/sanjeevpranesh48" target="_blank">LinkedIn</a></div></div></div></section>
+
+<footer><div class="container">© 2026 Sanjeev Pranesh S · Built for a simple, professional portfolio.</div></footer>
+</body></html>
