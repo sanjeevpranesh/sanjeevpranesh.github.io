@@ -3,52 +3,289 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sanjeev Pranesh S | ECE Student & Software Engineer</title>
-<meta name="description" content="Portfolio of Sanjeev Pranesh S, Electronics and Communication Engineering student at Coimbatore Institute of Technology.">
+<title>Sanjeev Pranesh S | Software & Embedded Systems</title>
+<meta name="description" content="Portfolio of Sanjeev Pranesh S — ECE student focused on software engineering, problem solving, data structures, SQL, embedded systems and FPGA-based computing.">
 <style>
-:root{--bg:#0b1020;--card:#121a2d;--text:#eef2ff;--muted:#aab4cc;--accent:#7c9cff;--line:#25304a}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-a{color:inherit;text-decoration:none}.container{max-width:1050px;margin:auto;padding:0 24px}
-nav{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{height:64px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800}.links{display:flex;gap:24px;color:var(--muted);font-size:14px}.links a:hover{color:white}
-.hero{padding:105px 0 85px}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
-h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:16px 0}.hero p{max-width:700px;color:var(--muted);font-size:19px}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:11px 18px;border:1px solid var(--line);border-radius:10px}.primary{background:var(--accent);color:#081022;border-color:var(--accent);font-weight:700}
-section{padding:65px 0;border-top:1px solid var(--line)}h2{font-size:30px;margin:0 0 25px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}.card h3{margin-top:0;font-size:20px}.card p{color:var(--muted)}.tag{display:inline-block;border:1px solid var(--line);padding:5px 9px;border-radius:999px;margin:4px 4px 0 0;color:#cbd5ee;font-size:13px}
-.timeline{border-left:2px solid var(--line);padding-left:22px}.item{margin-bottom:30px}.item h3{margin:0}.date{color:var(--accent);font-size:13px;font-weight:700}
-footer{padding:35px 0;color:var(--muted);font-size:14px}
-@media(max-width:700px){.links{display:none}.grid{grid-template-columns:1fr}.hero{padding-top:75px}}
+:root{
+  --bg:#080b12;--card:#101620;--card2:#0c1119;--text:#f4f7fb;--muted:#9aa6b6;
+  --accent:#6ea8fe;--line:#202a38;--max:1120px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--max);margin:auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:20;background:rgba(8,11,18,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.02em}
+.links{display:flex;gap:25px;color:var(--muted);font-size:14px}
+.links a:hover{color:var(--text)}
+.hero{padding:110px 0 90px}
+.eyebrow{color:var(--accent);font-weight:750;letter-spacing:.1em;text-transform:uppercase;font-size:12px}
+h1{font-size:clamp(45px,7vw,78px);line-height:1.02;letter-spacing:-.045em;max-width:900px;margin:16px 0 22px}
+.hero p{max-width:790px;color:var(--muted);font-size:19px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:11px 18px;border:1px solid var(--line);border-radius:9px;background:var(--card2)}
+.btn:hover{border-color:#40506a}
+.primary{background:var(--accent);color:#07101d;border-color:var(--accent);font-weight:750}
+section{padding:70px 0;border-top:1px solid var(--line)}
+h2{font-size:30px;letter-spacing:-.025em;margin:0 0 26px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.grid.three{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:25px}
+.card h3{margin:0 0 9px;font-size:20px}
+.card p{color:var(--muted);margin:8px 0 14px}
+.tag{display:inline-block;border:1px solid var(--line);padding:5px 9px;border-radius:999px;margin:4px 4px 0 0;color:#c8d2e2;font-size:12px}
+.kicker{color:var(--accent);font-size:12px;font-weight:750;text-transform:uppercase;letter-spacing:.08em}
+.stat{font-size:28px;font-weight:800;margin:4px 0}
+.timeline{border-left:2px solid var(--line);padding-left:22px}
+.item{margin-bottom:30px}
+.item:last-child{margin-bottom:0}
+.item h3{margin:3px 0}
+.date{color:var(--accent);font-size:12px;font-weight:750}
+.highlight{border-color:#34435a}
+ul{color:var(--muted);padding-left:20px}
+li{margin:7px 0}
+footer{padding:38px 0;color:var(--muted);font-size:13px}
+@media(max-width:800px){.grid,.grid.three{grid-template-columns:1fr}.links{display:none}.hero{padding-top:75px}}
 </style>
 </head>
 <body>
-<nav><div class="container nav"><div class="logo">Sanjeev Pranesh S</div><div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
 
-<header class="hero"><div class="container">
-<div class="eyebrow">ECE Student · Software & Embedded Systems</div>
-<h1>Building at the intersection of hardware and software.</h1>
-<p>Electronics and Communication Engineering student at Coimbatore Institute of Technology, interested in Data Structures & Algorithms, Operating Systems, embedded systems, and FPGA-based computing.</p>
-<div class="buttons"><a class="btn primary" href="#projects">View Projects</a><a class="btn" href="https://github.com/sanjeevpranesh" target="_blank">GitHub</a><a class="btn" href="https://www.linkedin.com/in/sanjeevpranesh48" target="_blank">LinkedIn</a></div>
-</div></header>
+<nav>
+  <div class="container nav">
+    <div class="logo">Sanjeev Pranesh S</div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#problem-solving">Problem Solving</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
 
-<section id="about"><div class="container"><h2>About</h2><div class="card"><p>I am pursuing a B.E. in Electronics and Communication Engineering at Coimbatore Institute of Technology. I enjoy solving engineering problems and building practical systems across software, embedded systems, and FPGA hardware.</p><p>My recent work includes an FPGA-based CNN hardware accelerator and an automated smart pill dispenser.</p></div></div></section>
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow">Software Engineering · Data · Embedded Systems</div>
+    <h1>Engineering practical solutions across software and hardware.</h1>
+    <p>
+      Electronics and Communication Engineering student at Coimbatore Institute of Technology,
+      with a growing focus on software engineering, problem solving, SQL, backend fundamentals,
+      and systems-oriented development.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn" href="https://github.com/sanjeevpranesh" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/sanjeevpranesh48" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
 
-<section id="projects"><div class="container"><h2>Projects</h2><div class="grid">
-<div class="card"><h3>FPGA-Based CNN Hardware Accelerator</h3><p>Hardware/software co-design CNN accelerator on the Xilinx PYNQ-Z2 using Verilog HDL for edge AI inference.</p><p>Implemented Convolution, ReLU and 2×2 Max Pooling modules with AXI-Lite and AXI-Stream interfaces for PS–PL communication. Performed RTL simulation, synthesis, FPGA implementation and debugging using Xilinx Vivado.</p><span class="tag">Verilog HDL</span><span class="tag">FPGA</span><span class="tag">Vivado</span><span class="tag">PYNQ-Z2</span></div>
-<div class="card"><h3>Smart Pill Dispenser</h3><p>Automated pill dispensing system with RTC-based scheduling and peripheral integration using Embedded C.</p><p>Integrated OLED display, servo motor, buzzer and push button, followed by hardware testing and debugging.</p><span class="tag">Embedded C</span><span class="tag">RTC</span><span class="tag">Arduino</span></div>
-</div></div></section>
+<section id="about">
+  <div class="container">
+    <h2>About</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="kicker">Profile</span>
+        <p>
+          I am pursuing a B.E. in Electronics and Communication Engineering at
+          Coimbatore Institute of Technology. My interests span software engineering,
+          data structures and algorithms, databases, embedded systems, and computer
+          architecture.
+        </p>
+        <p>
+          I enjoy understanding how systems work end-to-end and turning concepts into
+          working implementations. I am particularly interested in roles where strong
+          problem solving, programming fundamentals, data, and engineering discipline matter.
+        </p>
+      </div>
+      <div class="card">
+        <span class="kicker">What I bring</span>
+        <ul>
+          <li>Strong foundation in C/C++ and object-oriented programming concepts.</li>
+          <li>Regular problem-solving practice using data structures and algorithms.</li>
+          <li>SQL and DBMS fundamentals with interest in backend development.</li>
+          <li>Hands-on experience with FPGA, Verilog HDL and embedded systems.</li>
+          <li>Exposure to Python, Java, REST/API concepts, Git and cloud fundamentals.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section id="skills"><div class="container"><h2>Technical Skills</h2><div class="card">
-<span class="tag">C</span><span class="tag">C++</span><span class="tag">SQL</span><span class="tag">Data Structures</span><span class="tag">Operating Systems</span><span class="tag">Embedded C</span><span class="tag">FPGA</span><span class="tag">PYNQ-Z2</span><span class="tag">Verilog HDL</span><span class="tag">Xilinx Vivado</span>
-</div></div></section>
+<section id="projects">
+  <div class="container">
+    <h2>Selected Projects</h2>
+    <div class="grid">
 
-<section id="experience"><div class="container"><h2>Experience & Achievements</h2><div class="timeline">
-<div class="item"><div class="date">2024</div><h3>Embedded Systems Intern — Robomiracle</h3><p>Completed a 14-day internship covering embedded systems fundamentals, microcontroller programming, and hardware sensor interfacing.</p></div>
-<div class="item"><div class="date">2025</div><h3>Google Cloud Study Jams — Google Developer Group</h3><p>Completed hands-on labs in Artificial Intelligence and gained practical experience with AI concepts and AI tools.</p></div>
-<div class="item"><div class="date">2026</div><h3>Hack to Impact Hackathon — 1st Place</h3><p>Developed a custom CNN hardware accelerator on an FPGA.</p></div>
-</div></div></section>
+      <div class="card highlight">
+        <span class="kicker">Hardware + Software</span>
+        <h3>FPGA-Based CNN Hardware Accelerator</h3>
+        <p>
+          Designed a hardware/software co-design CNN accelerator on the Xilinx PYNQ-Z2
+          using Verilog HDL, targeting efficient edge-AI computation.
+        </p>
+        <p>
+          Implemented Convolution, ReLU and 2×2 Max Pooling modules and connected the
+          processing logic with the Zynq processing system using AXI-Lite, AXI-Stream
+          and AXI DMA. Worked through RTL simulation, synthesis, FPGA implementation
+          and debugging in Xilinx Vivado.
+        </p>
+        <span class="tag">Verilog HDL</span><span class="tag">FPGA</span>
+        <span class="tag">Vivado</span><span class="tag">PYNQ-Z2</span>
+        <span class="tag">AXI</span><span class="tag">CNN</span>
+      </div>
 
-<section id="contact"><div class="container"><h2>Contact</h2><div class="card"><p>I'm open to opportunities in software, embedded systems, and related engineering roles.</p><p><strong>Email:</strong> <a href="mailto:sanjeevpranesh7@gmail.com">sanjeevpranesh7@gmail.com</a></p><div class="buttons"><a class="btn primary" href="mailto:sanjeevpranesh7@gmail.com">Email Me</a><a class="btn" href="https://www.linkedin.com/in/sanjeevpranesh48" target="_blank">LinkedIn</a></div></div></div></section>
+      <div class="card">
+        <span class="kicker">Embedded Systems</span>
+        <h3>Smart Pill Dispenser</h3>
+        <p>
+          Built an automated dispensing system using Embedded C with RTC-based
+          scheduling and peripheral integration.
+        </p>
+        <p>
+          Integrated an OLED display, servo motor, buzzer and push button, followed
+          by hardware testing and debugging.
+        </p>
+        <span class="tag">Embedded C</span><span class="tag">Arduino</span>
+        <span class="tag">RTC</span><span class="tag">OLED</span>
+      </div>
 
-<footer><div class="container">© 2026 Sanjeev Pranesh S · Built for a simple, professional portfolio.</div></footer>
-</body></html>
+      <div class="card">
+        <span class="kicker">Software / Backend Learning</span>
+        <h3>Vehicle Service Management System</h3>
+        <p>
+          A software project focused on applying Java, MySQL and JDBC to a practical
+          service-management workflow, including database interaction and application logic.
+        </p>
+        <span class="tag">Java</span><span class="tag">MySQL</span>
+        <span class="tag">JDBC</span><span class="tag">DBMS</span>
+      </div>
+
+      <div class="card">
+        <span class="kicker">Engineering Approach</span>
+        <h3>Systems-Oriented Problem Solving</h3>
+        <p>
+          My preparation combines coding problems with core computer-science concepts:
+          data structures, algorithms, operating systems, DBMS, SQL, OOP and networking/API
+          fundamentals.
+        </p>
+        <span class="tag">DSA</span><span class="tag">OOP</span>
+        <span class="tag">OS</span><span class="tag">DBMS</span><span class="tag">SQL</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <div class="grid three">
+      <div class="card">
+        <span class="kicker">Programming</span>
+        <p><span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript Basics</span></p>
+      </div>
+      <div class="card">
+        <span class="kicker">Computer Science</span>
+        <p><span class="tag">Data Structures</span><span class="tag">Algorithms</span><span class="tag">OOP</span><span class="tag">DBMS</span><span class="tag">Operating Systems</span><span class="tag">SQL</span></p>
+      </div>
+      <div class="card">
+        <span class="kicker">Software Engineering</span>
+        <p><span class="tag">REST API Basics</span><span class="tag">Git</span><span class="tag">Backend Fundamentals</span><span class="tag">Cloud Fundamentals</span><span class="tag">ETL/ELT Concepts</span></p>
+      </div>
+      <div class="card">
+        <span class="kicker">Embedded / Hardware</span>
+        <p><span class="tag">Embedded C</span><span class="tag">Arduino</span><span class="tag">FPGA</span><span class="tag">Verilog HDL</span><span class="tag">PYNQ-Z2</span><span class="tag">Xilinx Vivado</span></p>
+      </div>
+      <div class="card">
+        <span class="kicker">Tools</span>
+        <p><span class="tag">Git</span><span class="tag">Vivado</span><span class="tag">Keil</span><span class="tag">LTSpice</span><span class="tag">Scilab</span></p>
+      </div>
+      <div class="card">
+        <span class="kicker">Current Focus</span>
+        <p><span class="tag">Problem Solving</span><span class="tag">SQL</span><span class="tag">Backend</span><span class="tag">CS Fundamentals</span><span class="tag">Interview Preparation</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="problem-solving">
+  <div class="container">
+    <h2>Problem Solving</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="kicker">Approach</span>
+        <h3>From brute force to optimization</h3>
+        <p>
+          I practice identifying the right data structure and reducing unnecessary
+          time and space complexity rather than stopping at a working solution.
+        </p>
+        <p>
+          Areas I have worked on include arrays, strings, hashing, two pointers,
+          sliding window, binary search, stacks, heaps, trees, graphs, backtracking
+          and dynamic programming.
+        </p>
+      </div>
+      <div class="card">
+        <span class="kicker">Interview readiness</span>
+        <h3>Explain the reasoning, not only the code</h3>
+        <p>
+          I focus on clarifying assumptions, stating the approach, discussing
+          complexity, handling edge cases and then implementing the solution.
+          This is the same structured approach I use when learning technical concepts.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2>Experience & Achievements</h2>
+    <div class="timeline">
+      <div class="item">
+        <div class="date">2024</div>
+        <h3>Embedded Systems Intern — Robomiracle</h3>
+        <p>Completed a 14-day internship covering embedded systems fundamentals, microcontroller programming and hardware sensor interfacing.</p>
+      </div>
+      <div class="item">
+        <div class="date">2025</div>
+        <h3>Google Cloud Study Jams — Google Developer Group</h3>
+        <p>Completed hands-on labs in Artificial Intelligence and gained practical exposure to AI concepts and AI tools.</p>
+      </div>
+      <div class="item">
+        <div class="date">2026</div>
+        <h3>Hack to Impact Hackathon — 1st Place</h3>
+        <p>Developed a custom CNN hardware accelerator on an FPGA, combining digital design, hardware/software co-design and edge-AI concepts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>
+        I am interested in software engineering, data/analytics engineering,
+        backend development and systems-oriented engineering opportunities.
+      </p>
+      <p><strong>Email:</strong> <a href="mailto:sanjeevpranesh7@gmail.com">sanjeevpranesh7@gmail.com</a></p>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:sanjeevpranesh7@gmail.com">Email Me</a>
+        <a class="btn" href="https://www.linkedin.com/in/sanjeevpranesh48" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/sanjeevpranesh" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Sanjeev Pranesh S · Software & Embedded Systems Portfolio</div>
+</footer>
+
+</body>
+</html>
